@@ -250,11 +250,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0904565f86de7434b93ac68d7e603ea7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::_Project.CarEngine
-  MoveSpeed: 75
-  MaxSpeed: 35
-  Drag: 0.98
-  SteerAngle: 10
-  Traction: 1
+  _moveSpeed: 50
+  _maxSpeed: 25
+  _steerAngle: 25
+  _traction: 1
 --- !u!114 &8803830093356422273
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,11 +1,9 @@
 using _Project.Bootstrap;
-using System;
 using UnityEngine;
 using UnityEngine.AI;
 
 namespace _Project
 {
-    [Serializable]
     public class EnemySpawner : MonoBehaviour
     {
         [SerializeField] private float _spawnInterval = 5f;
