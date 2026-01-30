@@ -14,8 +14,15 @@ namespace _Project
         public override void Configurate(IBuilder builder)
         {
             builder.Register(_settings);
-            builder.Register(_userFactory.CreateCar(_settings.playerConfig));
+            BuidPlayer(builder);
             builder.Register(_enemySpawner);
+        }
+
+        private void BuidPlayer(IBuilder builder)
+        {
+            Car car = _userFactory.CreateCar(_settings.playerConfig);
+            builder.Register(car);
+            builder.Register(car.GetComponent<CarEngine>());
         }
     }
 }
